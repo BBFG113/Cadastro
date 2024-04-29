@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Cadastro</title>
+</head>
+<div class="nav">
+    <nav class="inputNav">
+
+        <a href="homePassagens.html"><button class="botao">Página inicial</button></a>
+    </nav>
+</div>
+<body >
+
+<!-- código para o bloco de Login -->
+    <div id="Login">
+        <div class="dados">
+            <div class="legendas">
+                <h1 class="titulo">Login</h1>
+                <h1>Adicione suas informações para entrar</h1>
+                    <br>
+                <label class="legenda1">Nome:</label>
+                    <br>
+                <input id="nomeLogin" autocomplete="off" class="valor1" placeholder="Digite seu nome" type="text">
+                    <br>
+                <label class="legenda2">Sobrenome:</label>
+                    <br>
+                <input id="sobrenomeLogin" autocomplete="off" class="valor2" placeholder="Digite seu sobrenome" type="text">
+                    <br>
+                <label class="legenda3" >Telefone:</label>
+                    <br>
+                <input id="telefoneLogin" autocomplete="off" class="valor3" placeholder="Digite seu telefone" type="number">
+                    <br>
+                <label class="legenda4">Senha:</label>
+                    <br>
+                <input id="senhaLogin" autocomplete="off" class="valor4" placeholder="Digite sua senha" type="password">
+                    <br>
+                <button onclick="pegarLogin(), verificar()" id="botaoEntrar" class="botao">Entrar</button>
+                    <br><br>
+                <p>Não tem uma conta?</p>
+                <a onclick="trocaParaCadastro()"><p class="criarConta">cadastre-se agora!</p></a>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- código para o bloco de cadastro -->
+    <div id ="Cadastro">
+        <div class="dados">
+            <div class="legendas">
+                <h1 class="titulo">Cadastro</h1>
+                <h1>Crie sua conta com base nas caixa de texto a seguir</h1>
+                    <br>
+                <label class="legenda1">Nome:</label>
+                    <br>
+                <input id="nome" autocomplete="off" class="valor1" placeholder="Digite seu nome" type="text">
+                    <br>
+                <label class="legenda2">Sobrenome:</label>
+                    <br>
+                <input id="sobrenome" autocomplete="off" class="valor2" placeholder="Digite seu sobrenome" type="text">
+                    <br>
+                <label class="legenda3" >Telefone:</label>
+                    <br>
+                <input id="telefone" autocomplete="off" class="valor3" placeholder="Digite seu telefone" type="number">
+                    <br>
+                <label class="legenda4">Senha:</label>
+                    <br>
+                <input id="senha" autocomplete="off" class="valor4" placeholder="Digite sua senha" type="password">
+                    <br>
+                <button onclick="trocaParaLogin()" id="botaoCadastrar" class="botao">Cadastrar</button>
+                    <br><br>
+            </div>
+        </div>
+    </div>
+    <script src="cadastro.js" defer></script> 
+</body>
+</html>
